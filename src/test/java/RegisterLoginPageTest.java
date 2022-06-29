@@ -50,7 +50,6 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(4)
-    //@Disabled
     @DisplayName("Registration without email")
     @Description("Registration with username and password without email")
     public void registrationWithoutEmail() throws InterruptedException {
@@ -88,7 +87,6 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(6)
-    @Disabled
     @DisplayName("Register from data file")
     @Description("Register from data file")
     public void registerFromFile() throws InterruptedException {
@@ -109,8 +107,9 @@ public class RegisterLoginPageTest extends BaseTest {
             String email = users[i+2];
             String description = users[i+3];
             registerLoginPage.registration(name, password, email, description);
+            String actual = registerLoginPage.getRegisterAlert();
 
+            Assertions.assertEquals("User registered!", actual);
         }
-
     }
 }

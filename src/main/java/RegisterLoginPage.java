@@ -40,7 +40,15 @@ public class RegisterLoginPage {
 
     public void registration(String name, String password, String email, String description) throws InterruptedException {
 
-        driver.findElement(registerTab).click();
+         try {
+             driver.findElement(registerTab).click();
+         }
+         catch (Exception e){}
+
+        driver.findElement(registerUsername).clear();
+        driver.findElement(registerPassword).clear();
+        driver.findElement(registerEmail).clear();
+        driver.findElement(registerDescription).clear();
         Thread.sleep(1000);
         driver.findElement(registerUsername).sendKeys(name);
         driver.findElement(registerPassword).sendKeys(password);
@@ -49,7 +57,7 @@ public class RegisterLoginPage {
         Thread.sleep(1000);
         driver.findElement(registerUserButton).click();
         Thread.sleep(1000);
-        //driver.navigate().refresh();
+        driver.navigate().refresh();
     }
 
     public String getRegisterAlert(){
