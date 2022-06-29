@@ -11,6 +11,7 @@ public class PortfolioPageTest extends BaseTest {
     public void paginationTest() throws InterruptedException {
         registrationAndLogin();
         PortfolioPage portfolioPage = new PortfolioPage(driver);
+        portfolioPage.navigatePortfolioPage();
         int actual = 0;
         while (true){
             actual += portfolioPage.projectCount();
@@ -21,5 +22,17 @@ public class PortfolioPageTest extends BaseTest {
             portfolioPage.clickMoveNext();
         }
        Assertions.assertEquals(5, actual);
+    }
+    @Test
+    @DisplayName("Portfolio content validation")
+    @Description("Validate the content of Osen Clock page")
+    public void contentValidation() throws InterruptedException {
+        registrationAndLogin();
+        PortfolioPage portfolioPage = new PortfolioPage(driver);
+        portfolioPage.osenClockViewDetails();
+        String actual = portfolioPage.getOsenText();
+        String expected = "The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.";
+        Assertions.assertEquals(expected, actual);
+
     }
 }

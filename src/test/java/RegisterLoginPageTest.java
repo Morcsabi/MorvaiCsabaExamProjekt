@@ -1,9 +1,6 @@
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
-
-
 public class RegisterLoginPageTest extends BaseTest {
 
     @Test
@@ -81,6 +78,7 @@ public class RegisterLoginPageTest extends BaseTest {
         registerLoginPage.clickAcceptTerms();
         registerLoginPage.registration(name, password, "", "");
         Thread.sleep(2000);
+        refresh();
         registerLoginPage.login(name, password);
         Assertions.assertEquals("https://lennertamas.github.io/roxo/landing.html", registerLoginPage.loggedIn());
     }

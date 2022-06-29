@@ -54,7 +54,7 @@ public class RegisterLoginPage {
         Thread.sleep(1000);
         driver.findElement(registerUserButton).click();
         Thread.sleep(1000);
-        driver.navigate().refresh();
+
     }
 
     public String getRegisterAlert(){

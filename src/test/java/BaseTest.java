@@ -34,6 +34,7 @@ public class BaseTest {
     public void close(){
         driver.close();
     }
+
    public void registrationAndLogin() throws InterruptedException {
        String name = "Me";
        String password = "myself";
@@ -47,8 +48,11 @@ public class BaseTest {
        catch (Exception e){}
 
        regLog.registration(name, password, email, description);
-
+       refresh();
        regLog.login(name, password);
+   }
+   public void refresh(){
+       driver.navigate().refresh();
    }
 
 

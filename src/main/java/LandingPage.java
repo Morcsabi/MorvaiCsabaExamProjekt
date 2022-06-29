@@ -19,10 +19,6 @@ public class LandingPage {
 
 
     private final By kioTapeViewProject = By.xpath("//*[@id=\"project\"]/div/div/div[2]/div/div[2]/a");
-    //private final By useLessBrandViewProject = By.xpath("//*[@id=\"project\"]/div/div/div[3]/div/div[2]/a");
-    //private final By osenClockViewProject = By.xpath("//*[@id=\"project\"]/div/div/div[4]/div/div[2]/a");
-    //private final By seamlessWatchViewProject = By.xpath("//*[@id=\"project\"]/div/div/div[5]/div/div[2]/a");
-
 
     public void goToKioTapeProject(){
         driver.findElement(kioTapeViewProject).click();
