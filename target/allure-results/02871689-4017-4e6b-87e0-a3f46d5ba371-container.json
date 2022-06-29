@@ -1,0 +1,1 @@
+{"uuid":"02871689-4017-4e6b-87e0-a3f46d5ba371","name":"saveCardNamesToFileTest()","children":["fed3e6be-c190-4b31-bedb-4111513ae664"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1656486279953,"stop":1656486281267}],"afters":[],"links":[],"start":1656486279906,"stop":1656486285785}

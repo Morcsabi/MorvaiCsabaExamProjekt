@@ -1,0 +1,1 @@
+{"uuid":"54494779-fefd-4c67-9ef6-f4f2864fa192","name":"Valid registration","children":["e4000763-4da7-47ce-a48a-963af2103604"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1656339548254,"stop":1656339549292}],"afters":[],"links":[],"start":1656339548251,"stop":1656339553574}

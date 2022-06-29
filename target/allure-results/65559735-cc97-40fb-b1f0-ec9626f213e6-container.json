@@ -1,0 +1,1 @@
+{"uuid":"65559735-cc97-40fb-b1f0-ec9626f213e6","name":"Accept Terms and conditions","children":["eb41008e-7333-42f3-9d45-e5852aaea47a"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1655980189106,"stop":1655980190130}],"afters":[],"links":[],"start":1655980189104,"stop":1655980191311}

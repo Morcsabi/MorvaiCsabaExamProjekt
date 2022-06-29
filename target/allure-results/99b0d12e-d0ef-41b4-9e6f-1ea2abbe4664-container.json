@@ -1,0 +1,1 @@
+{"uuid":"99b0d12e-d0ef-41b4-9e6f-1ea2abbe4664","name":"Registration without email","children":["77e46557-da10-4c25-a4fb-187494d51a40"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1655977487412,"stop":1655977488809}],"afters":[],"links":[],"start":1655977487350,"stop":1655977489659}

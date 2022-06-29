@@ -1,0 +1,1 @@
+{"uuid":"ba52b020-f368-4929-a8b8-fd2aa4f0e99c","name":"Register from data file","children":["e5d1bea7-fa16-4b2f-a9fa-e134e980e89e"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1656507003814,"stop":1656507005864}],"afters":[],"links":[],"start":1656507003751,"stop":1656507006720}
