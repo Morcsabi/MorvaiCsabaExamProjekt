@@ -50,7 +50,7 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(4)
-    @Disabled
+    //@Disabled
     @DisplayName("Registration without email")
     @Description("Registration with username and password without email")
     public void registrationWithoutEmail() throws InterruptedException {
@@ -88,6 +88,7 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(6)
+    @Disabled
     @DisplayName("Register from data file")
     @Description("Register from data file")
     public void registerFromFile() throws InterruptedException {

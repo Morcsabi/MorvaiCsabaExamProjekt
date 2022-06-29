@@ -21,20 +21,20 @@ public class BaseTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-extensions");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("start-maximized");
-        //options.addArguments("--incognito");
+        options.addArguments("--incognito");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
 
-    /*@AfterEach
+    @AfterEach
     public void close(){
-        driver.manage().deleteAllCookies();
+        //driver.manage().deleteAllCookies();
         driver.close();
-    }*/
+    }
    public void registrationAndLogin() throws InterruptedException {
        String name = "Me";
        String password = "myself";
