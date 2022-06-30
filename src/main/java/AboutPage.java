@@ -21,13 +21,15 @@ public class AboutPage {
         Utils utils = new Utils(driver);
         utils.fileName = filename;
         List<WebElement> listOnPage = driver.findElements(nameCardName);
+        String text = "";
 
         for (int i = 0; i < listOnPage.size(); i++) {
 
-            String text = listOnPage.get(i).getText();
+            text += listOnPage.get(i).getText() + System.lineSeparator();
 
-            utils.write(text);
+
         }
+        utils.write(text);
     }
     //public void countCardNames
 
