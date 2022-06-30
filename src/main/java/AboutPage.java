@@ -28,8 +28,8 @@ public class AboutPage {
 
             utils.write(text);
         }
-
     }
+    //public void countCardNames
 
 
 

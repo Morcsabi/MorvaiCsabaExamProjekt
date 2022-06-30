@@ -42,7 +42,7 @@ public class Utils {
         String message = text + "\n";
 
         try {
-            Files.write(path, message.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            Files.write(path, message.getBytes(), StandardOpenOption.CREATE);
 
         } catch (Exception e) {
             System.out.println("An error has occurred");

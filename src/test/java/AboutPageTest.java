@@ -25,6 +25,12 @@ public class AboutPageTest extends BaseTest{
         Assertions.assertEquals(expected, actual);
 
     }
+    @Test
+    @DisplayName("")
+    @Description("")
+    public void countNames() throws InterruptedException {
+        registrationAndLogin();
+    }
 
 
 }
