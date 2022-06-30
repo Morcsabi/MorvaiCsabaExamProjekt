@@ -26,10 +26,14 @@ public class AboutPageTest extends BaseTest{
 
     }
     @Test
-    @DisplayName("")
-    @Description("")
-    public void countNames() throws InterruptedException {
+    @DisplayName("Count the titles")
+    @Description("Get the number of name card titles on page")
+    public void countTitles() throws InterruptedException {
         registrationAndLogin();
+        AboutPage aboutPage = new AboutPage(driver);
+        aboutPage.navigateToAbout();
+        int actual = aboutPage.countTitles();
+        Assertions.assertEquals(6, actual);
     }
 
 

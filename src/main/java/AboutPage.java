@@ -31,7 +31,12 @@ public class AboutPage {
         }
         utils.write(text);
     }
-    //public void countCardNames
+    public int countTitles (){
+        List<WebElement> titles = driver.findElements(nameCardTitle);
+        return titles.size();
+
+    }
+
 
 
 
