@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 public class PortfolioPageTest extends BaseTest {
 
     @Test
-    @DisplayName("Pagination test")
-    @Description("Count all of portfolios on Portfolio page with pagination")
+    @DisplayName("TC11 Pagination test")
+    @Description("TC11 - Count all of portfolios on Portfolio page with pagination")
     public void paginationTest() throws InterruptedException {
         registrationAndLogin();
         PortfolioPage portfolioPage = new PortfolioPage(driver);
@@ -24,8 +24,8 @@ public class PortfolioPageTest extends BaseTest {
        Assertions.assertEquals(5, actual);
     }
     @Test
-    @DisplayName("Portfolio content validation")
-    @Description("Validate the content of Osen Clock page")
+    @DisplayName("TC12 Portfolio content validation")
+    @Description("TC12 - Validate the content of Osen Clock page")
     public void contentValidation() throws InterruptedException {
         registrationAndLogin();
         PortfolioPage portfolioPage = new PortfolioPage(driver);

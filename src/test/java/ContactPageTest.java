@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 public class ContactPageTest extends BaseTest{
 
     @Test
-    @DisplayName("Complete contact message")
-    @Description("Contact message with full infos")
+    @DisplayName("TC9 Complete contact message")
+    @Description("TC9 - Contact message with full information")
     public void sendCompleteContactMessage() throws InterruptedException {
         registrationAndLogin();
         ContactPage contactPage = new ContactPage(driver);
@@ -21,8 +21,8 @@ public class ContactPageTest extends BaseTest{
         Assertions.assertEquals("Thanks! Contact form is submitted successfully.", actualMessage);
     }
     @Test
-    @DisplayName("Contact message wrong email address")
-    @Description("Contact message full info, wrong email address")
+    @DisplayName("TC10 Contact message wrong email address")
+    @Description("TC10 - Contact message full information, wrong email address")
     public void sendContactWithWrongEmail() throws InterruptedException {
         registrationAndLogin();
         ContactPage contactPage = new ContactPage(driver);

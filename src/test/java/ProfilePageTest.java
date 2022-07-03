@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 public class ProfilePageTest extends BaseTest{
 
     @Test
-    @DisplayName("Save profile")
-    @Description("Save profile")
+    @DisplayName("TC15 Save profile")
+    @Description("TC15 - Save profile")
     public void saveProfile() throws InterruptedException {
         registrationAndLogin();
         ProfilePage profilePage = new ProfilePage(driver);
@@ -18,8 +18,8 @@ public class ProfilePageTest extends BaseTest{
     }
 
     @Test
-    @DisplayName("Delete account")
-    @Description("Delete account")
+    @DisplayName("TC16 Delete account")
+    @Description("TC16 - Delete account")
     public void deleteAccount() throws InterruptedException {
         registrationAndLogin();
         ProfilePage profilePage = new ProfilePage(driver);

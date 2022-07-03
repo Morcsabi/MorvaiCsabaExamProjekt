@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 public class AboutPageTest extends BaseTest{
 
     @Test
-    @DisplayName("Names save to file")
-    @Description("Save the names from name cards to file, read the file assert the content")
+    @DisplayName("TC13 Names save to file")
+    @Description("TC13 - Save the names from name cards to file, read the file assert the content")
     public void saveCardNamesToFileTest() throws InterruptedException {
         registrationAndLogin();
         AboutPage aboutPage = new AboutPage(driver);
@@ -26,8 +26,8 @@ public class AboutPageTest extends BaseTest{
 
     }
     @Test
-    @DisplayName("Count the titles")
-    @Description("Get the number of name card titles on page")
+    @DisplayName("TC14 Count the titles")
+    @Description("TC14 - Get the number of name card titles on page")
     public void countTitles() throws InterruptedException {
         registrationAndLogin();
         AboutPage aboutPage = new AboutPage(driver);

@@ -5,8 +5,8 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(1)
-    @DisplayName("Accept Terms and conditions")
-    @Description("Click accept button on Terms and conditions window")
+    @DisplayName("TC1 Accept Terms and conditions")
+    @Description("TC1 - Click accept button on Terms and conditions window")
     public void acceptPrivacyTerms() {
         RegisterLoginPage registerLoginPage = new RegisterLoginPage(driver);
         registerLoginPage.navigate();
@@ -17,8 +17,8 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(2)
-    @DisplayName("Close Terms and conditions")
-    @Description("Close Terms and conditions window with close icon")
+    @DisplayName("TC2 Close Terms and conditions")
+    @Description("TC2 - Close Terms and conditions window with close icon")
     public void closePrivacyTerms() {
         RegisterLoginPage registerLoginPage = new RegisterLoginPage(driver);
         registerLoginPage.navigate();
@@ -29,8 +29,8 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(3)
-    @DisplayName("Valid registration")
-    @Description("Registration with valid username, password, email, description")
+    @DisplayName("TC3 Valid registration")
+    @Description("TC3 - Registration with valid username, password, email, description")
     public void validRegistration() throws InterruptedException {
         String name = "Béla";
         String password = "jelszó";
@@ -47,8 +47,8 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(4)
-    @DisplayName("Registration without email")
-    @Description("Registration with username and password without email")
+    @DisplayName("TC4 Registration without email")
+    @Description("TC4 - Registration with username and password without email")
     public void registrationWithoutEmail() throws InterruptedException {
         String name = "János";
         String password = "jelszó";
@@ -68,15 +68,16 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(5)
-    @DisplayName("Valid login")
-    @Description("Login with valid username and password")
+    @DisplayName("TC5 Valid login")
+    @Description("TC5 - Login with valid username, password and email")
     public void validLogin() throws InterruptedException {
         String name = "Béla";
         String password = "jelszó";
+        String email = "bela@king.com";
         RegisterLoginPage registerLoginPage = new RegisterLoginPage(driver);
         registerLoginPage.navigate();
         registerLoginPage.clickAcceptTerms();
-        registerLoginPage.registration(name, password, "", "");
+        registerLoginPage.registration(name, password, email, "");
         Thread.sleep(2000);
         refresh();
         registerLoginPage.login(name, password);
@@ -85,8 +86,8 @@ public class RegisterLoginPageTest extends BaseTest {
 
     @Test
     @Order(6)
-    @DisplayName("Register from data file")
-    @Description("Register from data file")
+    @DisplayName("TC6 Register from data file")
+    @Description("TC6 - Register from data file")
     public void registerFromFile() throws InterruptedException {
         Utils utils = new Utils(driver);
         String[] users = utils.read("RegisterUsers.txt").split("\n");

@@ -8,8 +8,8 @@ public class LandingPageTest extends BaseTest{
 
 
     @Test
-    @DisplayName("Get Kio-Tape from Landing Page")
-    @Description("Navigate to Kio-Tape Brand Project page from Landing page and save content to file for assertion")
+    @DisplayName("TC7 Get Kio-Tape from Landing Page")
+    @Description("TC7 - Navigate to Kio-Tape Brand Project page from Landing page")
     public void kioTapeViewProject() throws InterruptedException {
         registrationAndLogin();
         LandingPage landingPage = new LandingPage(driver);
@@ -18,8 +18,8 @@ public class LandingPageTest extends BaseTest{
         Assertions.assertEquals("https://lennertamas.github.io/roxo/portfolio/kio-tape-2/", actualUrl);
     }
     @Test
-    @DisplayName("Logout")
-    @Description("Logout with logout button")
+    @DisplayName("TC8 Logout")
+    @Description("TC8 - Logout with logout button")
     public void logoutTest() throws InterruptedException {
         registrationAndLogin();
         LandingPage landingPage = new LandingPage(driver);
